@@ -5,3 +5,4 @@ This repository is made with the sole purpose of practicing javascript by workin
 The different projects include:
 1. Weather app
 2. To-do List app
+3. Quiz app
