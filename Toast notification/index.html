@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <button class="btn1" onclick="toastNotification('s')">Success</button>
+    <button class="btn2" onclick="toastNotification('i')">Invalid</button>
+    <button class="btn3" onclick="toastNotification('e')">Error</button>
+    <div class="s">
+      Successfull Submition!!!
+    </div>
+    <div class="i">
+      Invalid Input!!!
+    </div>
+    <div class="e">
+      Fix the error!!!
+    </div>
+  </body>
+
+  <script>
+    function toastNotification(not){
+      const toast= document.querySelector(`.${not}`);
+      toast.style.display = 'block';
+
+      setTimeout(()=>{toast.style.display = 'none';},3000);
+    }
+  </script>
+</html>
